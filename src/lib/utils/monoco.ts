@@ -1,15 +1,21 @@
-import type { CornerOptions } from '@monokai/monoco'
-import { addCorners, unobserve } from '@monokai/monoco'
+import type { CornerOptions } from '@monokai/monoco/source'
+import { addCorners, draw, unobserve } from '@monokai/monoco/source'
 
 export const monoco = (
 	element: HTMLElement,
-	options: CornerOptions
+	cornerOptions: CornerOptions
 ) => {
 	if (element) {
-		addCorners(element, options)
+		addCorners(element, cornerOptions)
 	}
 
 	return {
+		update(cornerOptions: CornerOptions) {
+			if (element) {
+				draw(element, cornerOptions)
+			}
+		},
+
 		destroy() {
 			if (element) {
 				unobserve(element)
