@@ -1,6 +1,6 @@
 {
 	"name": "@monokai/monoco-svelte",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"author": "Monokai",
 	"license": "MIT",
 	"description": "Custom (squircle) corners and borders for Svelte components",
@@ -58,6 +58,6 @@
 		"vite": "^6.0.3"
 	},
 	"dependencies": {
-		"@monokai/monoco": "^0.0.8"
+		"@monokai/monoco": "^0.0.10"
 	}
 }
