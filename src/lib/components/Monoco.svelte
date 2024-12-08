@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte'
 	import type { CornerOptions } from '@monokai/monoco'
-	import monoco from '$lib/utils/monoco.js'
+	import monoco from '$lib/actions/monoco.js'
 
 	type Type = {
 		class: string,
@@ -22,7 +22,7 @@
 		type,
 		precision,
 		isRounded,
-		color,
+		background,
 		border,
 		strokeDrawType,
 		clipID,
@@ -45,7 +45,7 @@
 		type,
 		precision,
 		isRounded,
-		color,
+		background,
 		border,
 		strokeDrawType,
 		clipID,
