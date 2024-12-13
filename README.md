@@ -1,5 +1,11 @@
 # Monoco for Svelte
 
+## Installation
+
+```sh
+npm install @monokai/monoco-svelte
+```
+
 ## Usage
 
 You can use Monoco in two ways, as a Svelte action or as a Svelte component. The action (lowercase `monoco`) is more flexible, as it can use scoped classes, whereas the component (title-cased `Monoco`) cannot inherit scoped classes so they have to be declared globally.
