@@ -1,10 +1,10 @@
-import type { Snippet } from 'svelte';
+import type { Component, Snippet } from 'svelte';
 import type { CornerOptions } from '@monokai/monoco';
-type Type = {
+interface Interface extends Component, CornerOptions {
     class: string;
     children: Snippet;
     as: string;
-} & CornerOptions;
-declare const Monoco: import("svelte").Component<Type, {}, "">;
+}
+declare const Monoco: Component<Interface, {}, "">;
 type Monoco = ReturnType<typeof Monoco>;
 export default Monoco;

@@ -1,4 +1,4 @@
-import { addCorners, draw, unobserve } from '@monokai/monoco/source';
+import { addCorners, draw, unobserve } from '@monokai/monoco';
 export const monoco = (element, cornerOptions) => {
     if (element) {
         addCorners(element, cornerOptions);

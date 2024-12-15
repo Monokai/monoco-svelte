@@ -1,13 +1,13 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte'
+	import type { Component, Snippet } from 'svelte'
 	import type { CornerOptions } from '@monokai/monoco'
 	import monoco from '$lib/actions/monoco.js'
 
-	type Type = {
+	interface Interface extends Component, CornerOptions {
 		class: string,
 		children: Snippet,
 		as:string,
-	} & CornerOptions
+	}
 
 	const {
 		class: className,
@@ -30,7 +30,7 @@
 		observe,
 		onResize,
 		...rest
-	}:Type = $props()
+	}:Interface = $props()
 </script>
 
 <svelte:element
