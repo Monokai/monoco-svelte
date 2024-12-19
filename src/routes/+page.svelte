@@ -58,29 +58,29 @@
 
 <div class="monoco" use:monoco={{
 	background: 'gray',
-	type: custom,
+	cornerType: custom,
 	smoothing: 0,
-	radius: radius
+	borderRadius: radius
 }}>
 	hoi {radius}
 </div>
 
-<Monoco class="monoco" smoothing={1} radius={radius} border={[20, '#f0f']} as="a" href="https://google.com">
+<Monoco class="monoco" smoothing={1} borderRadius={radius} border={[20, '#f0f']} as="a" href="https://google.com">
 	hoi
 </Monoco>
 
 <div class="monoco" use:monoco={{
 	background: 'blue',
-	type: RoundInverse,
-	radius: radius
+	cornerType: RoundInverse,
+	borderRadius: radius
 }}>
 	hoi {radius}
 </div>
 
 <a class="monoco" use:monoco={{
 	background: 'red',
-	type: Inset,
-	radius: radius,
+	cornerType: Inset,
+	borderRadius: radius,
 	border: [[2, '#00f'], [4, '#0f0']],
 	precision: 0,
 	isRounded: true
