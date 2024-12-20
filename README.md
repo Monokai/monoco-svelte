@@ -20,7 +20,7 @@ You can use Monoco in two ways, as a Svelte action or as a Svelte component. The
 </script>
 
 <div class="block" use:monoco={{
-	radius: 32,
+	borderRadius: 32,
 	color: '#f00',
 	border: [2, '#000']
 }}></div>
@@ -41,7 +41,7 @@ You can use Monoco in two ways, as a Svelte action or as a Svelte component. The
 	import { Monoco } from '@monokai/monoco-svelte'
 </script>
 
-<Monoco class="block" radius={32} color={'#f00'} border={[2, '#000']}></Monoco>
+<Monoco class="block" borderRadius={32} color={'#f00'} border={[2, '#000']}></Monoco>
 
 <style>
 	:global .block {
