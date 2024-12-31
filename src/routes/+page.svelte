@@ -65,7 +65,7 @@
 	hoi {radius}
 </div>
 
-<Monoco class="monoco" smoothing={1} borderRadius={radius} border={[20, '#f0f']} as="a" href="https://google.com">
+<Monoco class="monoco" smoothing={1} borderRadius={[0, 1000, 500, 500]} border={[20, '#f0f']} as="a" href="https://google.com">
 	hoi
 </Monoco>
 
