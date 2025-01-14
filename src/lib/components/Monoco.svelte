@@ -6,13 +6,13 @@
 	interface Interface extends Component, CornerOptions {
 		class: string,
 		children: Snippet,
-		as:string,
+		as?:string,
 	}
 
 	const {
 		class: className,
 		children,
-		as,
+		as = 'div',
 
 		width,
 		height,

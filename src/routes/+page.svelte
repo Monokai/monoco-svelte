@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Monoco from '$lib/components/Monoco.svelte';
 	import { monoco } from '$lib/actions/monoco.js';
-	import { RoundInverse, Inset } from '@monokai/monoco';
+	import { RoundInverse, Inset, Squircle, Round, FigmaSquircle } from '@monokai/monoco';
 	import type { CornerTypeOptions } from '@monokai/monoco';
 
 	let radius = $state(32);
@@ -65,9 +65,22 @@
 	hoi {radius}
 </div>
 
-<Monoco class="monoco" smoothing={1} borderRadius={[0, 1000, 500, 500]} border={[20, '#f0f']} as="a" href="https://google.com">
+<Monoco class="monoco" smoothing={1} cornerType={Squircle} borderRadius={[400, 1000, 500, 500]} border={[20, '#f0f']} as="a" href="https://google.com">
 	hoi
 </Monoco>
+
+<Monoco class="monoco" smoothing={1} cornerType={Squircle} background="#f00" borderRadius={96}>
+	brr
+</Monoco>
+
+<div class="monoco" use:monoco={{
+	background: 'red',
+	cornerType: Squircle,
+	// smoothing: 1,
+	borderRadius: 96
+}}>
+	brr {radius}
+</div>
 
 <div class="monoco" use:monoco={{
 	background: 'blue',
@@ -99,7 +112,8 @@
 /*		background-color: #f00;*/
 /*		border: 2px solid #000;*/
 /*		border-radius: 64px;*/
-		width: 50%;
+/*		width: 50%;*/
+		width: 24rem;
 		height: 16rem;
 		filter: drop-shadow(1px 4px 8px #000);
 	}

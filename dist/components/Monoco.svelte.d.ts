@@ -3,7 +3,7 @@ import type { CornerOptions } from '@monokai/monoco';
 interface Interface extends Component, CornerOptions {
     class: string;
     children: Snippet;
-    as: string;
+    as?: string;
 }
 declare const Monoco: Component<Interface, {}, "">;
 type Monoco = ReturnType<typeof Monoco>;
