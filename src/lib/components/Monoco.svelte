@@ -25,7 +25,7 @@
 		background,
 		border,
 		strokeDrawType,
-		clipID,
+		idPrefix,
 		clip,
 		observe,
 		onResize,
@@ -48,7 +48,7 @@
 		background,
 		border,
 		strokeDrawType,
-		clipID,
+		idPrefix,
 		clip,
 		observe,
 		onResize

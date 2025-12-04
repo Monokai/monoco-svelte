@@ -1,6 +1,6 @@
 {
 	"name": "@monokai/monoco-svelte",
-	"version": "0.2.3",
+	"version": "0.3.1",
 	"author": "Monokai",
 	"license": "MIT",
 	"description": "Custom (squircle) corners and borders for Svelte components",
@@ -48,23 +48,23 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^7.0.0",
-		"@sveltejs/kit": "^2.48.4",
-		"@sveltejs/package": "^2.5.4",
+		"@sveltejs/kit": "^2.49.1",
+		"@sveltejs/package": "^2.5.7",
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"eslint": "^9.39.1",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.13.0",
 		"globals": "^16.5.0",
-		"prettier": "^3.6.2",
+		"prettier": "^3.7.4",
 		"prettier-plugin-svelte": "^3.4.0",
 		"publint": "^0.3.15",
-		"svelte": "^5.43.4",
-		"svelte-check": "^4.3.3",
+		"svelte": "^5.45.5",
+		"svelte-check": "^4.3.4",
 		"typescript": "^5.9.3",
-		"typescript-eslint": "^8.46.3",
-		"vite": "^7.2.2"
+		"typescript-eslint": "^8.48.1",
+		"vite": "^7.2.6"
 	},
 	"dependencies": {
-		"@monokai/monoco": "^0.2.3"
+		"@monokai/monoco": "^0.3.1"
 	}
 }

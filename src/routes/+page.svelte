@@ -90,6 +90,19 @@
 	hoi {radius}
 </div>
 
+<div class="monoco" use:monoco={{
+	background: 'blue',
+	cornerType: Squircle,
+	borderRadius: radius,
+	border: [
+		[10, 30, ['#f00', '#ff0']],
+		[10, 45, ['#f00', '#ff0']],
+		[10, 60, ['#00f', '#f0f']]
+	]
+}}>
+	hoi {radius}
+</div>
+
 <a class="monoco" use:monoco={{
 	background: 'red',
 	cornerType: Inset,
